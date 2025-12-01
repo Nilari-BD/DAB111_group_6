@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User Input Form</title>
+      <link rel="stylesheet" href="static/theme_style.css">
+    </head>
+    <body>
+        <nav>
+            <h2>Content</h2>
+            <p><a href="/">Homepage</a></p>
+            <p><a href="about_life_style">About Life Style dataset</a></p>       
+            <p><a href="life_style_sample_dataset">Life Style Sample Dataset</a></p>
+            <p><a href="about_personal_expenses">About Personal Expenses dataset</a></p>
+            <p><a href="filter_personal_expenses_dataset">Personal Expenses Dataset</a></p>
+            <p><a href="submit">Add data to Personal Expenses Dataset</a></p>
+        </nav>
+        <main class="container">
+            <h1>Adding Information</h1>
+            <form action="/submit" method="POST">
+                <div class = "form__fieldset">
+                    <label for="date" class ="form__label">Date:</label>
+                    <input type="date" id="date" name="date" class = "form__input">
+                </div>
+
+                <div class = "form__fieldset">
+                    <label for="time" class ="form__label">Time:</label>
+                    <input type="time" id="time" name="time" class = "form__input">
+                </div>
+
+                <div class = "form__fieldset">
+                    <label for="item" class ="form__label">Item:</label>
+                    <input type="text" id="item" name="item" class = "form__input">
+                </div>
+
+                <div class = "form__fieldset">
+                    <label for="amount" class ="form__label">Amount:</label>
+                    <input type="number" id="amount" name="amount" class = "form__input">
+                </div>
+                
+                <div class = "form__fieldset">
+                    <label for="category" class ="form__label">Category:</label>
+                    <select type="text" id="category" name="category" class = "form__input form_select">
+                            <option value = "alone">alone</option>
+                            <option value = "friend">friend</option>
+                    </select>
+                </div>
+
+                <div class = "form__fieldset">
+                    <input type="submit" value="Add data" class = "form_submit form__input">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

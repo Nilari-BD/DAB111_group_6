@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="static/theme_style.css">
+  </head>
+
+<body>
+    <nav>
+        <h2>Content</h2>
+        <p><a href="/">Homepage</a></p>
+        <p><a href="about_life_style">About Life Style dataset</a></p>       
+        <p><a href="life_style_sample_dataset">Life Style Sample Dataset</a></p>
+        <p><a href="about_personal_expenses">About Personal Expenses dataset</a></p>
+        <p><a href="filter_personal_expenses_dataset">Personal Expenses Dataset</a></p>
+        <p><a href="submit">Add data to Personal Expenses Dataset</a></p>
+    </nav>
+    <main class="container">        
+        <h1>About Life Style Dataset</h1>
+        <p style="text-align: justify;">
+            The Life Style dataset used in this study was sourced from Kaggle <a href="https://www.kaggle.com/datasets/jockeroika/life-style-data/data">(Essa, 2025)</a>.
+            It contains fitness participant information created for recommendation systems and fitness applications, and was later expanded synthetically from 973 to 20,000 rows while maintaining logical consistency between features.
+        </p>
+
+        <h2>Description of Final Dataset</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Name </th>
+                <th>Variable Type</th>
+                <th>Data Type </th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>		
+                <td>	age	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Age of the participant (in years and months).	</td>
+            </tr>
+            
+            <tr>		
+                <td>	age_year	</td>
+                <td>	Discrete numeric	</td>
+                <td>	Integer	</td>
+                <td>	Age of the participant (in years).	</td>
+            </tr>	
+
+            <tr>		
+                <td>	gender	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Category	</td>
+                <td>	Biological gender (Male/Female).	</td>
+            </tr>
+
+            <tr>		
+                <td>	weight_kg	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Weight of the individual in kilograms.	</td>
+            </tr>	
+
+            <tr>			
+                <td>	height_m	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Height of the individual in meters.	</td>	
+            </tr>
+
+            <tr>		
+                <td>	max_bpm	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Maximum heart rate recorded during a workout session.	</td>
+            </tr>
+
+            <tr>				
+                <td>	avg_bpm	</td>		
+                <td>	Numerical continuous	</td>		
+                <td>	Float	</td>		
+                <td>	Average heart rate maintained during the session. </td>		
+            </tr>				
+
+            <tr>		
+                <td>	resting_bpm	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Resting heart rate before starting the workout.	</td>
+            </tr>		
+                                                
+            <tr>		
+                <td>	session_duration_h	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Duration of the workout session in hours.	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	calories_burned	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Total calories burned during the session.	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	workout_type	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Category	</td>
+                <td>	Type of workout performed (e.g., Strength, HIIT, Cardio).	</td>
+            </tr>		              
+
+            <tr>		
+                <td>	fat_percentage	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Body fat percentage of the individual.	</td>
+            </tr>		                                       
+
+            <tr>		
+                <td>	water_intake_l	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Average daily water consumption in liters.	</td>
+            </tr>		                            
+
+            <tr>		
+                <td>	workout_frequency	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Number of workout days per week.	</td>
+            </tr>		                           
+            
+            <tr>		
+                <td>	experience_level	</td>
+                <td>	Categorical ordinal	</td>
+                <td>	Category	</td>
+                <td>	Fitness experience level (1=Beginner, 2=Intermediate, 3=Advanced).	</td>
+            </tr>		                            
+
+            <tr>		
+                <td>	bmi	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Body Mass Index, a measure of body fat based on height and weight.	</td>
+            </tr>		                            
+
+            <tr>		
+                <td>	daily_meals_frequency	</td>
+                <td>	Discrete numeric	</td>
+                <td>	Integer	</td>
+                <td>	Number of meals consumed daily.	</td>
+            </tr>		       
+
+            <tr>		
+                <td>	carbs	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Daily carbohydrate intake (grams).	</td>
+            </tr>		                      
+
+            <tr>		
+                <td>	proteins	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Daily protein intake (grams).	</td>
+            </tr>		
+
+            <tr>			
+                <td>	fats	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Daily fat intake (grams).	</td>	
+            </tr>			
+
+            <tr>			
+                <td>	calorie_intake	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Total daily calorie intake from food.	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	meal_type	</td>	
+                <td>	Nominal categorical	</td>	
+                <td>	Category	</td>	
+                <td>	Name of the meal (e.g., Breakfast, Lunch, Dinner).	</td>	
+            </tr>
+
+            <tr>			
+                <td>	diet_type	</td>	
+                <td>	Nominal categorical	</td>	
+                <td>	Category	</td>	
+                <td>	Type of diet followed (e.g., Keto, Vegan, Balanced).	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	sodium_mg	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Sodium content in milligrams per meal.	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	serving_size_g	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Portion size of the meal in grams.	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	cooking_method	</td>	
+                <td>	Nominal categorical	</td>	
+                <td>	Category	</td>	
+                <td>	Cooking method used (e.g., Boiled, Fried, Grilled).	</td>	
+            </tr>	
+
+            <tr>			
+                <td>	prep_time_min	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Preparation time in minutes.	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	rating	</td>	
+                <td>	Numerical continuous	</td>	
+                <td>	Float	</td>	
+                <td>	Meal or workout rating (typically 1–5 scale).	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	name_of_exercise	</td>	
+                <td>	Nominal categorical	</td>	
+                <td>	Object (String)	</td>	
+                <td>	Name of the exercise performed.	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	sets	</td>	
+                <td>	Discrete numeric	</td>	
+                <td>	Integer	</td>	
+                <td>	Number of sets completed in the exercise.	</td>	
+            </tr>			
+                            
+            <tr>			
+                <td>	reps	</td>	
+                <td>	Discrete numeric	</td>	
+                <td>	Integer	</td>	
+                <td>	Number of repetitions per set.	</td>	
+            </tr>	
+
+            <tr>		
+                <td>	benefit	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Object (String)	</td>
+                <td>	Description of the exercise’s physical benefit.	</td>
+            </tr>		                       
+                        
+            <tr>		
+                <td>	burns_calories_30m	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Estimated calories burned in 30 minutes of that exercise.	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	target_muscle_group	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Object (String)	</td>
+                <td>	Main muscle group targeted by the exercise.	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	equipment_needed	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Object (String)	</td>
+                <td>	Equipment required to perform the exercise.	</td>
+            </tr>		
+                                                
+            <tr>		
+                <td>	difficulty_level	</td>
+                <td>	Categorical ordinal	</td>
+                <td>	Category	</td>
+                <td>	Exercise difficulty level (Beginner, Intermediate, Advanced).	</td>
+            </tr>		
+                                                
+            <tr>		
+                <td>	body_part	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Category	</td>
+                <td>	Primary body part involved (e.g., Arms, Legs, Chest).	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	type_of_muscle	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Object (String)	</td>
+                <td>	Type of muscle engaged (e.g., Upper, Core, Grip Strength).	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	workout	</td>
+                <td>	Nominal categorical	</td>
+                <td>	Object (String)	</td>
+                <td>	Specific workout or exercise name.	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	bmi_calc	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Body mass index (BMI)	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	lean_mass_kg	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Lean body mass (LBM) in kg is the weight of all the components in your body except for fat, which includes your muscles, organs, bones, and water	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	expected_burn	</td>
+                <td>	Numerical continuous	</td>
+                <td>	Float	</td>
+                <td>	Calories expected to be burned as a result of exercise/food	</td>
+            </tr>		
+                        
+            <tr>		
+                <td>	burns_calories_bin	</td>
+                <td>	Categorical ordinal	</td>
+                <td>	Category	</td>
+                <td>	Categorizes workout calories burned (e.g. Medium, High, Low, Very High)	</td>
+            </tr>			
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Body */
+body {
+    margin: 10px 5px 5px;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    height: 100%;
+    display: block;
+}
+
+/* Header 1 */
+h1 {
+    color: #000000;
+}        
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Container */
+.container {
+    min-height: 550px;
+    margin: auto;            
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 230px;
+}
+
+/* Header Section*/
+.header {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+}        
+
+/* Navigation */
+nav {
+    position: fixed;
+    border-radius: 5px;
+    float: left;
+    color: #fff;
+    background-color: #03256C;            
+    padding: 20px 20px;            
+    min-height: 550px;
+    width: 180px;
+}
+
+nav a {
+  color: #fff; /* Sets all links to red */
+}
+
+/* Main */
+main {
+    height: 100%;
+    padding: 20px;
+    float: center;
+    margin-left: 230px;
+}
+
+/* Footer */
+footer {                   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 20px; 
+    font-size: 0.9rem;
+    color: #666;    
+}
+
+/* Table style */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid black;    
+    padding: 8px;
+    text-align: left;
+}
+
+th {    
+    background-color: #A1CDF4;
+    text-align: center;
+    color: black;
+}
+
+/* Button style */
+
+.button {
+    padding: 10px 20px;
+    background-color: #20A39E;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Form style */
+
+.form__fieldset {
+    padding: 20px 20px;
+}
+
+.form__fieldset:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form__input {
+    font-size: 1rem;
+    padding: 6px;
+    width: 200px;    
+}
+
+.form__select {
+    padding: 4px 2px;
+}
+
+.form__label {
+    margin-right: 20px;
+}
+
+.form_submit {
+    padding: 8px 16px;   
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #1c2023;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}
+
+.form_submit:hover{
+    background-color: #1c2023;
+    color: white;
+}

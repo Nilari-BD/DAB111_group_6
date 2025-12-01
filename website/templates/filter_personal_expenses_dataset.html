@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filtered Table</title>
+        <link rel="stylesheet" href="static/theme_style.css">
+    </head>
+    <body> 
+        <nav>
+            <h2>Content</h2>
+            <p><a href="/">Homepage</a></p>
+            <p><a href="about_life_style">About Life Style dataset</a></p>       
+            <p><a href="life_style_sample_dataset">Life Style Sample Dataset</a></p>
+            <p><a href="about_personal_expenses">About Personal Expenses dataset</a></p>
+            <p><a href="filter_personal_expenses_dataset">Personal Expenses Dataset</a></p>
+            <p><a href="submit">Add data to Personal Expenses Dataset</a></p>
+        </nav>
+        <main class="container">
+            <h1>My Expenses Dataset</h1>
+            <form method="POST">
+                <label for="search_query" class ="form__label">Search:</label>
+                <input type="text" id="search_query" name="search_query" value="{{ search_query }}" class = "form__input">
+                <input type="submit" value="Filter" class = "form_submit form__input">
+            </form>
+            <table> 
+                <thead> 
+                    <tr>
+                    {% for header in headings %}
+                    <th>{{ header }}</th>
+                    {% endfor %}
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    {% for row in data %} 
+                    <tr> 
+                        {% for cell in row %} 
+                        <td>{{ cell }}</td> 
+                        {% endfor %} 
+                    </tr> 
+                    {% else %}
+                    <tr>
+                        <td colspan="6">No results found.</td>
+                    </tr>
+                    {% endfor %} 
+                </tbody> 
+            </table> 
+        </main>  
+</body>
+</html>
